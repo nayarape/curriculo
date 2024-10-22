@@ -1,100 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo</title>
+    <title>Currículo Nayara</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="nayara.css">
 </head>
+
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid justify-content-between">
+            <a class="navbar-brand" href="#">Currículo Nayara</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#perfil" onclick="showSection('perfil')">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia" onclick="showSection('experiencia')">Experiência</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacao" onclick="showSection('educacao')">Educação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades" onclick="showSection('habilidades')">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato" onclick="showSection('contato')">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formulario" onclick="showSection('formulario')">Formulário</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo -->
     <div class="container">
-        <header>
-            <h1>Nayara Peixoto </h1>
-            <img src="C:\Users\Aluno\Documents\atividade front\curriculo.html\Captura de tela 2024-09-10 205623.png" height="15%"
-            width="15%" style="border-radius: 50%;" alt="Foto de Nayara Peixoto" title="Nayara Peixoto">
-            <p class="title">Estudante de Análise e Desenvolvimento de Sistemas </p>
+        <header class="text-center my-4">
+            <h1>Nayara Peixoto</h1>
+            <img src="C:\Users\Aluno\Documents\Nayara curriculo\Captura de tela 2024-09-10 205623.png" height="15%" width="15%" style="border-radius: 50%;" alt="Foto de Nayara Peixoto" title="Nayara Peixoto">
+            <p class="title">Estudante de Análise e Desenvolvimento de Sistemas</p>
         </header>
-        
-        <div id="perfil">
+
+        <div id="perfil" class="section my-4">
             <h2>Perfil</h2>
-            <p style="text-align: justify;">Sou uma estudante de Análise e Desenvolvimento de Sistemas com conhecimentos e
-                interesses em programação de sites e aplicativos usando tecnologias como HTML, CSS, JavaScript . Já tive
-                experiências de desenvolvimentos de projetos em web e mobile. Estou no processo de transição de carreira e à
-                procura de estágios que complementem o conhecimento adquirido na academia.</p>
-                <p style="text-align: center;">
-                    <a href="https://github.com/nayarape" target="_blank"><img
-                            src="C:\Users\Aluno\Documents\atividade front\curriculo.html\OIP.jpg" height="45px"></a> <a
-                        href="www.linkedin.com/in/nayara-peixoto-64525b23b" target="_blank"><img
-                            src="C:\Users\Aluno\Documents\atividade front\curriculo.html\OIP (1).jpg" height="45px"></a>
-    </div>
+            <p style="text-align: justify;">Sou uma estudante de Análise e Desenvolvimento de Sistemas com conhecimentos e interesses em programação de sites e aplicativos usando tecnologias como HTML, CSS, JavaScript. Já tive experiências de desenvolvimento de projetos em web e mobile. Estou no processo de transição de carreira e à procura de estágios que complementem o conhecimento adquirido na academia.</p>
+            <p style="text-align: center;">
+                <a href="https://github.com/nayarape" target="_blank"><img src="C:\Users\Aluno\Documents\Nayara curriculo\OIP.jpg"height="45px"></a>
+                <a href="https://www.linkedin.com/in/nayara-peixoto-64525b23b" target="_blank"><img src="C:\Users\Aluno\Documents\Nayara curriculo\OIP (1).jpg" height="45px"></a>
+            </p>
+        </div>
 
-        <div id="experiencia">
+        <div id="experiencia" class="section my-4" style="display: none;">
             <h2>Experiência Profissional</h2>
-
-            <table>
+            <table class="table table-striped">
                 <tr>
-
                     <th>Nome da Empresa</th>
                     <th>Cargo | Data de início - Data de término</th>
-                    <th>Descrição .</th>
+                    <th>Descrição</th>
                 </tr>
-
-                <tr>         
+                <tr>
                     <td>Avanade</td>
                     <td>10/10/2024</td>
                     <td>Estagiária FrontEnd.</td>
-                </tr>  
-
-                <tr>         
+                </tr>
+                <tr>
                     <td>Accenture</td>
                     <td>10/10/2026</td>
-                    <td>Desenvolver Pleno.</td>
-                </tr>  
+                    <td>Desenvolvedora Plena.</td>
+                </tr>
+            </table>
+        </div>
 
-            </table>    
-            </div>
-    
-
-        <div id="educacao">
+        <div id="educacao" class="section my-4" style="display: none;">
             <h2>Educação</h2>
             <div class="education">
-                <h3>Faculdade Senac </h3>
+                <h3>Faculdade Senac</h3>
                 <ul>
-                    <li><a href="https://faculdadesenacpe.edu.br/graduacao/gastronomia" target="_blank">Graduação em Gestão de
-                        Gastronomia - Senac</a> (2015 - 2017)</li>
-
+                    <li><a href="https://faculdadesenacpe.edu.br/graduacao/gastronomia" target="_blank">Graduação em Gestão de Gastronomia - Senac</a> (2015 - 2017)</li>
                 </ul>
                 <hr>
-                
             </div>
             <div class="education">
                 <h3>Faculdade Senac</h3>
                 <ul>
-                    <li><a href="https://faculdadesenacpe.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas"
-                        target="_blank">Graduação em Análise e Desenvolvimento de Sistemas </a> (Em Andamento)</li>
+                    <li><a href="https://faculdadesenacpe.edu.br/graduacao/analise-e-desenvolvimento-de-sistemas" target="_blank">Graduação em Análise e Desenvolvimento de Sistemas</a> (Em Andamento)</li>
                 </ul>
                 <hr>
-                
             </div>
         </div>
 
-        <section id="habilidades">
+        <section id="habilidades" class="section my-4" style="display: none;">
             <h2>Habilidades</h2>
             <ul>
                 <li>Inglês Avançado</li>
-                <li>Linguagens de Programação : Java , Python</li>
+                <li>Linguagens de Programação: Java, Python</li>
                 <li>HTML, CSS, Javascript</li>
             </ul>
         </section>
 
-        <section id="contato">
+        <section id="contato" class="section my-4" style="display: none;">
             <h2>Contato</h2>
-            <p>Email: <a href="https://mail.google.com/">Gmail: peixotonayara00@gmail.com</a></p>
+            <p>Email: <a href="mailto:peixotonayara00@gmail.com">peixotonayara00@gmail.com</a></p>
             <p>Telefone: (88) 8888-8888</p>
         </section>
+
+        <!-- Nova seção do formulário -->
+        <section id="formulario" class="section my-4" style="display: none;">
+            <h2>Formulário de Contato</h2>
+            <form id="contactForm">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="mb-3">
+                        <label for="firstName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="lastName" class="form-label">Sobrenome</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="phone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="email@exemplo.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="mt-4">
+                    <legend>Informações do Serviço</legend>
+                    <div class="mb-3">
+                        <label for="language" class="form-label">Língua aplicada no serviço</label>
+                        <select class="form-select" id="language" required>
+                            <option value="">Selecione uma língua</option>
+                            <option value="Ingles">Inglês</option>
+                            <option value="Espanhol">Espanhol</option>
+                            <option value="Frances">Francês</option>
+                            <option value="Portugues">Português (pt-br)</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="prototype" class="form-label">Upload de protótipo</label>
+                        <input type="file" class="form-control" id="prototype" accept=".pdf,.doc,.docx,.jpeg,.png" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Linguagens Preferidas</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Java" id="java">
+                            <label class="form-check-label" for="java">Java</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Python" id="python">
+                            <label class="form-check-label" for="python">Python</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="JavaScript" id="javascript">
+                            <label class="form-check-label" for="javascript">JavaScript</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="database" class="form-label">Tipo de Banco de Dados</label>
+                        <input type="text" class="form-control" id="database" placeholder="Ex: MySQL, MongoDB, etc." required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="mt-4">
+                    <legend>Reunião</legend>
+                    <div class="mb-3">
+                        <label for="meetingDate" class="form-label">Data</label>
+                        <input type="date" class="form-control" id="meetingDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="meetingTime" class="form-label">Hora</label>
+                        <input type="time" class="form-control" id="meetingTime" required>
+                    </div>
+                </fieldset>
+
+                <div class="mt-4">
+                    <button type="reset" class="btn btn-secondary">Limpar</button>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
     </div>
+
+    <footer style="text-align: center; font-family: 'Courier New', Courier, monospace; font-size: small;">
+        <span>Copyright © 2024 Nayara Peixoto. Todos os Direitos Reservados.</span>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function (section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Adicionando uma validação simples ao formulário
+        document.getElementById('contactForm').onsubmit = function() {
+            // Aqui você pode adicionar lógica de validação se necessário
+            alert('Formulário enviado com sucesso!');
+            return false; // Previne o envio real para fins de demonstração
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<footer style="text-align: center; font-family: 'Courier New', Courier, monospace; font-size: small;"></footer>
-    <span>Copyright © 2024 Nayara Peixoto. Todos os Direitos Reservados.</span>
-</footer>
+
 </html>
